@@ -68,7 +68,17 @@ WHERE reviews.rating = 4 OR reviews.rating = 5;
 __________________________________________
 
 7. Selezionare quali giochi erano presenti nei tornei nei quali hanno partecipato i giocatori il cui nome inizia per 'S' (474) 
-//
+SELECT DISTINCT videogames.id
+FROM videogames
+JOIN tournament_videogame
+    ON videogames.id = tournament_videogame.videogame_id
+JOIN tournaments
+    ON tournament_videogame.tournament_id = tournaments.id
+JOIN player_tournament
+    ON tournaments.id = player_tournament.tournament_id
+JOIN players
+    ON player_tournament.player_id = players.id
+WHERE players.name LIKE "S%"
 
 __________________________________________
 
