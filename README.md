@@ -2,7 +2,7 @@
 db-videogames-query
 
 ### Schema E-R
-![[Pasted image 20221129162923.png]]
+![diagrams](https://github.com/vincaf/db-videogames-query/blob/main/db-diagrams.jpg?raw=true)
 
 ### Query
 Dopo aver importato il dump del db contenente i dati ([[Videogiochi DB]]), eseguire le seguenti query:
